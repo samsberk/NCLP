@@ -1,0 +1,147 @@
+﻿
+h1, h2, h3, h4, h5{
+    font-weight:bold;
+    font-family:muli;
+}
+p{
+    font-family:muli;
+    font-size:16px;
+}
+.link{
+    text-decoration:none;
+    color:lightpink;
+}
+.link:hover{
+    color:forestgreen;
+    text-decoration:none;
+}
+
+
+
+.after-click {
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 110;
+    display: none;
+}
+
+    .after-click img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30vh;
+        width: 30vh;
+        transform: translate(-50%,-50%);
+    }
+
+#loader {
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.90);
+    position: fixed;
+    z-index: 100;
+}
+
+    #loader img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30vh;
+        width: 30vh;
+        transform: translate(-50%,-50%);
+    }
+
+.mv {
+    font-family: muli;
+    font-size: 17px;
+    color: lightpink;
+    text-align: justify;
+}
+
+/*nav bar*/
+
+.my-nav {
+    height: 52px;
+    background: none;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+    .my-nav .my-collapse .my-navbar-nav li .link-b, .my-nav .my-collapse .navbar-right li .link-b {
+        font-size: 14px;
+        padding: 10px 15px;
+        color: white;
+        margin: 2px;
+        letter-spacing: 2px;
+    }
+
+        .my-nav .my-collapse .my-navbar-nav li .link-b:hover, .my-nav .my-collapse .navbar-right li .link-b:hover {
+            color: white;
+            border-radius: 3px;
+            background: forestgreen;
+            letter-spacing: 2px;
+            border-bottom: 5px solid white;
+            transition: all .3s;
+        }
+
+    .my-nav .my-collapse .my-navbar-nav li.active .link-b {
+        color: rgba(1,43,85,1);
+        border-radius: 3px;
+        background: rgb(245, 155, 49);
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-bottom: 5px solid white;
+    }
+
+        .my-nav .my-collapse .my-navbar-nav li.active .link-b:hover {
+            color: white;
+            border-radius: 3px;
+            background: forestgreen;
+            letter-spacing: 2px;
+            border-bottom: 5px solid white;
+            transition: all .3s;
+        }
+
+@media screen and (max-width:720px) {
+    .my-collapse, .navbar-right {
+        background: rgba(1,43,85,1);
+        border-radius: 3px;
+    }
+
+    .my-navbar-nav, .navbar-right {
+        padding: 0px 10px 5px 10px;
+    }
+
+    .my-nav .my-collapse .my-navbar-nav li .link-b:hover, .my-nav .my-collapse .navbar-right li .link-b:hover {
+        border: none;
+        border-left: 5px solid white;
+    }
+
+    .my-nav .my-collapse .my-navbar-nav li.active .link-b:hover {
+        border: none;
+        border-left: 5px solid white;
+    }
+
+    .my-nav .my-collapse .my-navbar-nav li.active .link-b {
+        border: none;
+        border-left: 5px solid white;
+    }
+}
+
+
+/* Nav bar end*/
+.foot {
+    min-height: 30px;
+    width: 100%;
+    font-family: muli;
+    background: rgba(1,43,85,1);
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    user-select: none;
+}
